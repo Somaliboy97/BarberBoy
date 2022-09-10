@@ -14,6 +14,8 @@ closeIcon.addEventListener('click', () => {
     menuIcon.classList.remove('active')
 });
 
+
+
 // Scroll Nav
 
 const navScroll = document.querySelector('nav');

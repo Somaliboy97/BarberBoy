@@ -25,7 +25,6 @@ html {
 
 body {
     background-color: var(--black);
-    min-width: 100%;
 }
 
 section {
@@ -99,7 +98,6 @@ a {
 
 header {
     background: linear-gradient(180deg, #313335 0%, #010101 100%);
-    width: 100%;
 }
 
 nav {
@@ -273,11 +271,10 @@ nav .info .instagram a:hover {
     text-align: center;
     margin: 3rem auto;
     line-height: 120%;
-    max-width: 37rem;
 }
 
 .about .content p {
-    max-width: 30rem;
+    width: 30rem;
     line-height: 200%;
     margin-bottom: 3rem;
     margin: 0 auto 2rem auto;
@@ -334,10 +331,11 @@ nav .info .instagram a:hover {
 
 
 
-@media(max-width: 1500px) {
+
+@media(max-width: 1515px) {
 
     .home .content h2 {
-        font-size: 2.5rem;
+        font-size: 2.5rem
     }
 
 }
@@ -350,9 +348,6 @@ nav .info .instagram a:hover {
     }
 
     nav {
-        width: 100%;
-        top: 0;
-        right: 0;
         padding: 1rem 2rem;
     }
 
@@ -397,10 +392,6 @@ nav .info .instagram a:hover {
 
 @media(max-width: 1100px) {
 
-    .home {
-        margin-bottom: 4rem;
-    }
-
     .home .image {
         min-width: 30rem;
         margin: 0 auto;
@@ -436,15 +427,8 @@ nav .info .instagram a:hover {
 
     .home .image {
         width: 25rem;
-        height: 30rem;
+        height: 23rem;
     }
-
-    .home .image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
 }
 
 
@@ -479,16 +463,24 @@ nav .info .instagram a:hover {
         top: 50%;
         left: 100%; right: 0;
         width: 100%;
-        margin-top: 3rem;
-        padding-bottom: 2rem;
+        height: 100vh;
+        padding-top: 3rem;
+        background-color: var(--black);
+    }
+
+    nav .open-menu,
+    nav .close-menu {
+        position: relative;
     }
 
     nav ul.active {
         left: 0;
-        border-bottom: .3rem solid #4f4b4b;
+        right: 0;
+        top: 0;
     }
 
     nav ul li {
+        padding-top: 2rem;
         margin: 1rem 0;
     }
 
@@ -520,11 +512,11 @@ nav .info .instagram a:hover {
 @media(max-width: 650px) {
 
     .about .content h3 {
-        max-width: 28rem;
+        width: 28rem;
     }
 
     .about .content p {
-        max-width: 20rem;
+        width: 20rem;
         text-align: center;
     }
 
@@ -546,14 +538,6 @@ nav .info .instagram a:hover {
         width: 100%;
     }
 
-    nav .open-menu {
-        margin-right: 7rem;
-    }
-
-    .home {
-        margin-bottom: 20rem;
-    }
-
     .home .content {
         margin-left: 1rem;
     }
@@ -563,41 +547,38 @@ nav .info .instagram a:hover {
     }
 
     .home .content p {
-        max-width: 18rem;
+        width: 18rem;
         font-size: .8rem;
     }
 
     .home .image {
         order: 2;
+        display: none;
     }
 
     .about {
         align-items: center;
         justify-content: center;
-        margin: 0 auto;
     }
 
     .about .heading {
         font-size: 1.8rem;
     }
 
-    .about .content {
-        margin: 0 auto;
-    }
-
     .about .content h3 {
         font-size: 1.5rem;
-        max-width: 22rem;
+        width: 19rem;
     } 
 
     .about .content p {
-        max-width: 18rem;
+        width: 18rem;
         font-size: .8rem;
     }
 
     .about .image img {
-        max-width: 20rem;
-        max-height: 16rem;
+        max-width: 15rem;
+        max-height: 12rem;
+        display: none;
     }
 
 }
