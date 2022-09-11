@@ -53,24 +53,6 @@ filterContainer.addEventListener("click", () => {
 
 // class change when window width < 1336
 
-const boxes = document.querySelectorAll(".box");
-
-window.addEventListener("resize", () => {
-  if (window.innerWidth < 1336) {
-    boxes.forEach((box) => {
-      box.classList.remove("up");
-      box.classList.add("down");
-    });
-  } else {
-    boxes.forEach((box) => {
-      box.classList.add("up");
-      box.classList.remove("down");
-    });
-  }
-});
-
-// fix it
-/*
 const boxes = document.querySelectorAll('.box');
 const windowInnerWidth = width=>window.innerWidth < width
 
@@ -84,11 +66,11 @@ const toggleClassNameHandler = (classOne, classTwo) => {
 }
 
 const toggleInnerWidthHandler = () => {
-    if (isWindowWidthIsLowerThan(1336)) {
+    if (windowInnerWidth(1336)) {
        toggleClassNameHandler('up', 'down')
        return;
     }
      toggleClassNameHandler('down', 'up')
 }  
 
-window.addEventListener('resize', toggleInnerWidthHandler) */
+window.addEventListener('resize', toggleInnerWidthHandler) 
