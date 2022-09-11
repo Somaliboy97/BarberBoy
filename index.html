@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   <title>BarberBoy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>BarberBoy Warszawa, profesjonalny salon fryzjerski</title>
+    <meta name="description" content="BarberBoy to najlepsze miejsce, gdzie możesz trafić w Warszawie. Pełen zespół profesjonalistów zajmie się Twoją przemianą. Sprawdź ofertę i umów się na wizytę.">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -12,7 +15,6 @@
 <body>
 
     <header class="header">
-
         <nav>
             <a href="#" class="logo">Barber<span>Boy</span></a>
             <ul>
@@ -23,18 +25,17 @@
             </ul>
             <div class="info">
                 <div class="phone">
-                    <img src="images/icon-phone-30x30.png" alt="">
+                    <img src="images/icon-phone-30x30.png" alt="ikona telefon">
                     <a href="tel:123-456-789">123 456 789</a>
                 </div>
                 <div class="instagram">
-                    <img src="images/icon-instagram-30x30.png" alt="">
+                    <img src="images/icon-instagram-30x30.png" alt="ikona instagram">
                     <a target="_blank" href="https://www.instagram.com">barberboy.wwa</a>
                 </div>
             </div>
-            <img class="open-menu" id="menu-btn" src="images/menu-icon.png" alt="">
-            <img src="images/menu-close-icon.png" alt="" id="close-btn" class="close-menu">
+            <img class="open-menu" id="menu-btn" src="images/menu-icon.png" alt="otwarcie menu">
+            <img class="close-menu" id="close-btn" src="images/menu-close-icon.png" alt="zamknięcie menu">
         </nav>
-
     </header>
 
     <section class="home" id="home">
@@ -44,13 +45,19 @@
             <a href="#services" class="btn icon">Explore Our Services</a>
         </div>
         <div class="image">
-            <img src="images/hero-section-image.png" alt="">
+            <img src="images/hero-section-image.png" alt="barber">
+        </div>
+        <div class="bg-img up">
+            <img src="images/bg-icon.png" alt="nożyczki w tle">
+        </div>
+        <div class="bg-img down">
+            <img src="images/bg-icon.png" alt="nożyczki w tle">
         </div>
     </section>
 
     <section class="about" id="about">
         <div class="image">
-            <img src="images/about-section-image.png" alt="">
+            <img src="images/about-section-image.png" alt="strzyżenie">
         </div>
         <div class="content">
             <h2 class="heading">About Us</h2>
@@ -60,53 +67,241 @@
         </div>
     </section>
 
+    <section class="services" id="services">
+        <h3 class="heading">Service we Provide</h3>
+        <div class="box-container">
+            <div class="box down" id="haircut">
+                <div class="content">
+                    <img src="images/service-icon-1.png" alt="ikona narzędzi" class="image">
+                    <h3>Hair Cutting Style</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nunc est, tempus ut libero </p>
+                </div>
+            </div>
+            <div class="box down" id="haircolor">
+                <div class="content">
+                    <img src="images/service-icon-2.png" alt="ikona prysznicu" class="image">
+                    <h3>Hair Washing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nunc est, tempus ut libero </p>
+                </div>
+            </div>
+            <div class="box down" id="body">
+                <div class="content">
+                    <img src="images/service-icon-3.png" alt="ikona ciała" class="image">
+                    <h3>Body Treatments</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nunc est, tempus ut libero </p>
+                </div>
+            </div>
+            <div class="box up" id="beauty">
+                <div class="content">
+                    <img src="images/service-icon-4.png" alt="ikona spa" class="image">
+                    <h3>Beauty & Spa</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nunc est, tempus ut libero </p>
+                </div>
+            </div>
+            <div class="box up" id="shaving">
+                <div class="content">
+                    <img src="images/service-icon-5.png" alt="ikona stylowania" class="image">
+                    <h3>Stylist Shaving</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nunc est, tempus ut libero </p>
+                </div>
+            </div>
+            <div class="box up" id="haircolor">
+                <div class="content">
+                    <img src="images/service-icon-6.png" alt="ikona farbowania" class="image">
+                    <h3>Multi Hair Colors</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nunc est, tempus ut libero </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="pricing" id="pricing">
+        <h4 class="heading">Pricing</h4>
+        <div class="pricing-nav">
+            <div class="pricing-filter">
+                <span class="filter-item active" data-filter="all">All Pricing</span>
+                <span class="filter-item" data-filter="spa">Beauty & Spa</span>
+                <span class="filter-item" data-filter="bodyt">Body Treatments</span>
+                <span class="filter-item" data-filter="face">Face Washing</span>
+                <span class="filter-item" data-filter="meditations">Meditations</span>
+                <span class="filter-item" data-filter="shaving">Shaving</span>
+            </div>
+        </div>
+            <div class="box-container">
+                <div class="box shaving">
+                    <div class="image">
+                        <img src="images/pricing-image-1.png" alt="strzyżenie">
+                    </div>
+                    <div class="content">
+                        <h4>Hair Cutting & Fitting</h4>
+                        <p>Clean & Simple 30 - 40 minutes</p>
+                    </div>
+                   <div class="price">
+                    <span>$50</span>
+                   </div>
+                </div>
+                <div class="box shaving">
+                    <div class="image">
+                        <img src="images/pricing-image-2.png" alt="strzyżenie">
+                    </div>
+                    <div class="content">
+                        <h4>Shaving & Facial</h4>
+                        <p>Clean & Simple 30 - 40 minutes</p>
+                    </div>
+                    <div class="price">
+                        <span>$40</span>
+                    </div>
+                </div>
+                <div class="box face">
+                    <div class="image">
+                        <img src="images/pricing-image-3.png" alt="farbowanie">
+                    </div>
+                    <div class="content">
+                        <h4>Hair Color & Wash</h4>
+                        <p>Clean & Simple 30 - 40 minutes</p>
+                    </div>
+                   <div class="price">
+                    <span>$89</span>
+                   </div>
+                </div>
+                <div class="box bodyt">
+                    <div class="image">
+                        <img src="images/pricing-image-4.png" alt="masaż">
+                    </div>
+                    <div class="content">
+                        <h4>Body Massage</h4>
+                        <p>Clean & Simple 30 - 40 minutes</p>
+                    </div>
+                   <div class="price">
+                    <span>$50</span>
+                   </div>
+                </div>
+                <div class="box spa">
+                    <div class="image">
+                        <img src="images/pricing-image-5.png" alt="spa">
+                    </div>
+                    <div class="content">
+                        <h4>Beauty & Spa</h4>
+                        <p>Clean & Simple 30 - 40 minutes</p>
+                    </div>
+                    <div class="price">
+                        <span>$35</span>
+                    </div>
+                </div>
+                <div class="box face">
+                    <div class="image">
+                        <img src="images/pricing-image-6.png" alt="spa">
+                    </div>
+                    <div class="content">
+                        <h4>Facial & Face Wash</h4>
+                        <p>Clean & Simple 30 - 40 minutes</p>
+                    </div>
+                   <div class="price">
+                    <span>$45</span>
+                   </div>
+                </div>
+                <div class="box bodyt">
+                    <div class="image">
+                        <img src="images/pricing-image-7.png" alt="masaż">
+                    </div>
+                    <div class="content">
+                        <h4>Backbone Massage</h4>
+                        <p>Clean & Simple 30 - 40 minutes</p>
+                    </div>
+                   <div class="price">
+                    <span>$60</span>
+                   </div>
+                </div>
+                <div class="box meditations">
+                    <div class="image">
+                        <img src="images/pricing-image-8.png" alt="medytacja">
+                    </div>
+                    <div class="content">
+                        <h4>Meditation</h4>
+                        <p>Clean & Simple 30 - 40 minutes</p>
+                    </div>
+                   <div class="price">
+                    <span>$90</span>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="gallery" id="gallery">
+        <section class="gallery" id="gallery">
+            <h4 class="heading">Latest Works Gallery</h4>
+            <div class="content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+           </div>
+                <div class="box-container">
+                    <div class="box-gallery">
+                        <img src="images/Gallery-1.png" alt="fryzura">
+                        <div class="overlay">
+                            <h2>Check This Out!</h2>
+                            <p>find more on our <a target="_blank" href="https://www.instagram.com">Instagram!</a></p>
+                        </div>
+                    </div>
+                    <div class="box-gallery">
+                        <img src="images/Gallery-2.png" alt="fryzura">
+                        <div class="overlay">
+                            <h2>Check This Out!</h2>
+                            <p>find more on our <a target="_blank" href="https://www.instagram.com">Instagram!</a></p>
+                        </div>
+                    </div>
+                    <div class="box-gallery">
+                        <img src="images/Gallery-3.png" alt="fryzura">
+                        <div class="overlay">
+                            <h2>Check This Out!</h2>
+                            <p>find more on our <a target="_blank" href="https://www.instagram.com">Instagram!</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="upbtn">
+                    <a target="_blank" href="https://www.instagram.com" href="#" class="btn icon">Explore More</a>
+                </div>
+        </section>
 
+        <setion class="footer">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <div class="box-container">
+                <div class="box first">
+                    <a href="#home" class="logo">Barber<span>Boy</span></a>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="share">
+                        <a target="_blank" href="https://pl-pl.facebook.com/"><img src="images/icon-facebook-32x32.png" alt="facebook"></a>
+                        <a target="_blank" href="https://www.instagram.com" href="#"><img src="images//icon-instagram-32x32.png" alt="instagram"></a>
+                        <a target="_blank" href="https://twitter.com/?lang=pl"><img src="images/icon-twitter-32x32.png" alt="twitter"></a>
+                        <a target="_blank" href="https://pl.linkedin.com/"><img src="images/icon-linkedin-32x32.png" alt="linkedin"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a class="links" href="#about">About Us</a>
+                    <a class="links" href="#services">Services</a>
+                    <a class="links" href="#pricing">Pricing</a>
+                    <a class="links" href="#gallery">Gallery</a>
+                </div>
+                <div class="box">
+                    <h3>Services</h3>
+                    <a class="links" href="#haircut">Hair Cutting</a>
+                    <a class="links" href="#shaving">Shaving & Cutting</a>
+                    <a class="links" href="#haircolor">Hair Colors</a>
+                    <a class="links"href="#beauty">Beauty & Spa</a>
+                    <a class="links" href="#body">Body Massages</a>
+                </div>
+                <div class="box">
+                    <h3>Contact Us</h3>
+                    <a target="_blank" class="links" href="https://goo.gl/maps/757jBUrHqRSnFy2c7"><img src="images/icon-map-16x16.png" alt="mapa">Warsaw, Poland</a>
+                    <a class="links" href="tel:123-456-789"><img src="images/icon-phone-16x16.png" alt="telefon">123-456-789</a>
+                    <a class="links" href="mailto:contact@email.com"><img src="images/icon-mail-16x16.png" alt="email">contact@email.com</a>
+                    <a class="links" href="#"><img src="images/icon-clock-16x16.png" alt="godziny otwarcia">Sun-Friday, 08am - 06pm</a>
+                </div>
+            </div>
+    
+            <p class="copyright">This website is developed by Greemi © 2022 </p>
+    
+        </section>
 
 
 
