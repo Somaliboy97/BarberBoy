@@ -19,6 +19,21 @@
   transition: all 0.5s ease;
 }
 
+*::-webkit-scrollbar {
+  width: .5rem;
+  height: .5rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--red-color);
+  border-radius: .5rem;
+
+}
+
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
